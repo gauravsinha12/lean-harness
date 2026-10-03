@@ -1,0 +1,37 @@
+{
+  "name": "lean-harness",
+  "version": "0.1.0",
+  "description": "A small, dependency-free agent harness: tool calling, agent loop, context compaction, structured outputs, record/replay evals. Works with Claude and any OpenAI-compatible local model server.",
+  "type": "module",
+  "exports": "./src/index.ts",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "keywords": [
+    "agent",
+    "llm",
+    "tool-calling",
+    "harness",
+    "evals",
+    "claude",
+    "llama.cpp",
+    "local-ai"
+  ],
+  "author": "Gaurav Sinha",
+  "license": "MIT",
+  "peerDependencies": {
+    "@anthropic-ai/sdk": ">=0.60"
+  },
+  "peerDependenciesMeta": {
+    "@anthropic-ai/sdk": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.1",
+    "typescript": "^5.9.3"
+  }
+}
